@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  
+<!--  Plug Externel CSS-->
+  <link rel="stylesheet" href="style.css">
+
+<!--  Internel CSS-->
+  <style>
+      h1    {
+          color: black;
+      }
+
+    h2  {
+      color: blue;
+    }
+
+    h3 {
+        color: pink;
+    }
+
+    .red-text {
+        color: red;
+    }
+
+    .my-bg {
+        background-color: green;
+    }
+
+    /*id selecters*/
+    #bluetext {
+        color: purple;
+    }
+
+    #my-text {
+        text-decoration: underline;
+    }
+
+    /*Universal Selector*/
+    * {
+        font-style: italic;
+    }
+
+    /*Attribute Selectors*/
+
+    [href] {
+        background: yellow;
+    }
+
+    [href = "https://chat.openai.com/"] {
+        background: pink;
+    }
+
+    [href ^= "http"] {
+        background: grey;
+    }
+
+    [href $= ".uk/"] {
+        background: green;
+    }
+
+    [href *= "student"] {
+        background: orange;
+    }
+
+    [href ~= "student"] {
+        background: red;
+    }
+
+    h1[href] {
+        background: chartreuse;
+    }
+
+    h1[href = "https://bolton.ac.uk"] {
+        background: pink;
+    }
+
+    .my-institute[href] {
+        background: skyblue;
+    }
+
+    h1:hover {
+        background: yellow;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<h1>Hello Selectors</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi, delectus deleniti dignissimos illo iusto mollitia officia repellendus sunt tenetur vero, voluptas voluptatem. At, deserunt fugit mollitia nam nulla possimus!</p>
+
+<ol>
+    <h1 class="red-text" id="my-text">I'm list</h1>
+    <li id="bluetext">Java</li>
+    <li class="red-text">Python</li>
+    <li class="bluetext">Go</li>
+</ol>
+<h1>Hello Selectors</h1>
+
+<ol>
+    <li> <a href="https://chat.openai.com/">CHATGPT</a> </li>
+</ol>
+
+<ol>
+    <li> <a href="http://chat.openai.com/">IJSE</a> </li>
+</ol>
+
+<ol>
+    <li> <a href="https://employers.studenthub.bolton.ac.uk">BOLTON</a> </li>
+</ol>
+
+<ol>
+    <li> <a href="https://employers. student hub.bolton.ac.uk/">IJSE</a> </li>
+</ol>
+
+
+<h1 href="https://www.bolton.ac.uk/">Welcome to UoBolton</h1>
+<h1 class="my-institute" href="https://www.ijse.lk/">Welcome to IJSE 1</h1>
+<h1 id="ijse" href="https://www.ijse.lk/">Welcome to IJSE 2</h1>
+<h1 class="my-institute" href="https://www.ijse.lk/">Welcome to IJSE 3</h1>
+
+
+<h1>Welcome to IJSE</h1>
+
+<a href="https://www.ijse.lk/">IJSE</a><br>
+<a href="http://www.cardiffmet.ac.uk/Pages/default.aspx">Cardiff Metro</a><br>
+<a href="https://www.bolton.ac.uk/">London Met</a><br>
+<a href="http://www.bolton.ac.uk/">UoBolton</a><br>
+<a href="https://www.deakin.edu.au/">Deakin University</a><br>
+<a href="https://www.sydney.edu.au/">University of sydney</a>
+
+
+
+</body>
+</html>
