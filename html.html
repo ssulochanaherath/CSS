@@ -22,6 +22,64 @@
             background: dodgerblue;
         }
 
+        li:first-child {
+            color: blue;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+        li:nth-child(3) {
+            color: green;
+        }
+
+        li:nth-last-child(1) {
+            color: yellow;
+        }
+
+        /*Pseudo-Element Selectors*/
+        h1:before {
+            content: "Hello ";
+        }
+
+        h1:after {
+            content: "😄";
+        }
+
+        h1:first-letter {
+            color: red;
+        }
+
+        p::first-line{
+            color: deeppink;
+            font-weight: bolder;
+        }
+
+        input::placeholder{
+            color: deeppink;
+            font-weight: bolder;
+        }
+
+        input::file-selector-button{
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        input::file-selector-button:hover{
+            color: green;
+            font-weight: bolder;
+        }
+        
+        ::marker {
+            content: "⭐";
+        }
+
+        ::selection {
+            color: darkblue;
+            background: dodgerblue;
+        }
+
     </style>
 </head>
 <body>
@@ -42,6 +100,74 @@
     <br>
     <input type="text" id="name" name="name" placeholder="Enter your Name">
 </form>
+
+<ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C</li>
+    <li>C#</li>
+    <li>Go</li>
+    <li>C++</li>
+</ul>
+
+<!--<ul>-->
+<!--    <li>Java</li>-->
+<!--    <li>Python</li>-->
+<!--    <li>C</li>-->
+<!--    <li>C#</li>-->
+<!--    <li>Go</li>-->
+<!--    <li>C++</li>-->
+<!--</ul>-->
+
+<!--<ul>-->
+<!--    <li>Java</li>-->
+<!--    <li>Python</li>-->
+<!--    <li>C</li>-->
+<!--    <li>C#</li>-->
+<!--    <li>Go</li>-->
+<!--    <li>C++</li>-->
+<!--</ul>-->
+
+<!--<li>Java</li>-->
+<!--<li>Python</li>-->
+<!--<li>C</li>-->
+<!--<li>C#</li>-->
+<!--<li>Go</li>-->
+<!--<li>C++</li>-->
+
+<ul>
+    <li>Java</li>
+    <li>Python</li>
+</ul>
+
+
+<h1>CSS</h1>
+<form >
+    <input type="text " placeholder="Enter your name">
+
+    <br><br>
+
+    <input type="file">
+</form>
+
+<ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C</li>
+    <li>C#</li>
+    <li>Go</li>
+    <li>C++</li>
+</ul>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cum dolorem earum eos minus obcaecati quibusdam tenetur, ullam vel. Atque, consequatur distinctio doloribus eligendi error nam nulla reiciendis temporibus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cum dolorem earum eos minus obcaecati quibusdam tenetur, ullam vel. Atque, consequatur distinctio doloribus eligendi error nam nulla reiciendis temporibus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cum dolorem earum eos minus obcaecati quibusdam tenetur, ullam vel. Atque, consequatur distinctio doloribus eligendi error nam nulla reiciendis temporibus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cum dolorem earum eos minus obcaecati quibusdam tenetur, ullam vel. Atque, consequatur distinctio doloribus eligendi error nam nulla reiciendis temporibus!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at cum dolorem earum eos minus obcaecati quibusdam tenetur, ullam vel. Atque, consequatur distinctio doloribus eligendi error nam nulla reiciendis temporibus!
+</p>
+
+
 
 </body>
 </html>

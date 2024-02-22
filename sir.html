@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+
+        section>div>div:first-of-type{
+            color: red;
+        }
+
+        section>div>div:last-of-type{
+            color: blue;
+        }
+
+        section>div>div:first-of-type>p:nth-child(3){
+            color: green;
+        }
+
+        /*child combinator*/
+        section>div>div:last-of-type>ol>li:nth-child(3)>ul>li:nth-child(4){
+            color: orange;
+        }
+
+        /*decendent combinator*/
+        section p{
+            color: deeppink;
+        }
+
+        /*adjecent combinator*/
+        h3+div+p{
+            color: deeppink;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+    <div>
+
+        <div>
+            <h3>Programming</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <h3>Tech Stack</h3>
+            <ol>
+                <li>Java</li>
+                <li>Python</li>
+                <li>
+                    JS
+                    <ul>
+                        <li>Topic 01</li>
+                        <li>Topic 02</li>
+                        <li>Topic 03</li>
+                        <li>Topic 04</li>
+                        <li>Topic 05</li>
+                    </ul>
+                </li>
+                <li>TS</li>
+            </ol>
+        </div>
+
+    </div>
+
+</section>
+
+<main>
+    <div>
+        <div>
+            <h3>Topic</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor doloremque doloribus ex hic impedit perspiciatis quam. Ad aliquid, animi consectetur, distinctio ducimus earum, fuga nihil tempore temporibus tenetur unde?
+            </p>
+        </div>
+    </div>
+</main>
+
+<section>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consectetur delectus deleniti ducimus eaque error esse, iste iusto minus natus nostrum officiis, praesentium quaerat quibusdam quos sequi similique totam unde!
+        </p>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aspernatur blanditiis corporis cumque dolor dolore ducimus ex illo incidunt laboriosam magnam maiores modi placeat quas quibusdam quod saepe tempora, vero!
+    </p>
+
+</section>
+
+<section>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem beatae blanditiis commodi cupiditate distinctio illum iure magnam ratione, reiciendis suscipit tempore voluptate. Debitis dicta ea eaque laborum mollitia odit.
+    </p>
+</section>
+
+<h3>Hello 01</h3>
+<div>kkkkkk</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+
+<h4>Hello 02</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia nam voluptatem.</p>
+
+</body>
+</html>
+
+</body>
+</html>
