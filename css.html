@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        #btn { /*( 0 , 1 , 0 , 0)*/
+            color: blue;
+        }
+
+        .custom-btn { /*( 0 , 0 , 1 , 0)*/
+            color: green;
+        }
+
+        button { /*( 0 , 0 , 0 , 1)*/
+            color: red;
+        }
+
+        * { /*( 0 , 0 , 0 , 0)*/
+            color: grey;
+        }
+
+        /*-------------------------------------------*/
+
+        h1 { /*( 0 , 0 , 0 , 1)*/
+            color: red;
+        }
+
+        [name] { /*( 0 , 0 , 1 , 0)*/
+            color: blue;
+        }
+
+        .h1class { /*( 0 , 0 , 1 , 0)*/
+            color: green;
+        }
+
+        .h1class[name] { /*( 0 , 0 , 2 , 0)*/
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <button id = "btn" class = "custom-btn" style="color: aqua">Click</button>
+
+    <h1 name = "name"  class="h1class" >Hello</h1>
+
+    <h1  class="h1class" >Welcome</h1>
+
+    <h1 name = "name" >Main</h1>
+
+
+</body>
+</html>
