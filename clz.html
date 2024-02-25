@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+        section{
+            width: 1000px;
+            height: 500px;
+
+            border: 8px solid red;
+            position: relative;
+        }
+        #div1{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: dodgerblue;
+
+            position: relative;
+            left: 100px;
+        }
+        #div2{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: orange;
+
+            position: relative;
+            left: 200px;
+        }
+        #div3{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: deeppink;
+
+            position: relative;
+            left: 300px;
+        }
+        #div4{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: gray;
+
+            position: relative;
+            left: 400px;
+        }
+
+        #div5{
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            background-color: blue;
+            position: absolute;
+            /*right: 450px;*/
+            /*top: 200px;*/
+
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #div6 {
+            width: 500px;
+            height: 250px;
+            background-color: deeppink;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #div7 {
+            width: 500px;
+            height: 250px;
+            background-color: yellow;
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        #div8 {
+            width: 500px;
+            height: 250px;
+            background-color: green;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        #div9 {
+            width: 500px;
+            height: 250px;
+            background-color: orange;
+
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        main{
+            width: 800px;
+            height: 300px;
+
+            border: 8px solid green;
+            position: relative;
+        }
+
+        div{
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            background-color: aqua;
+
+            position: absolute;
+
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <br>
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+    <br>
+    <div id="div3"></div>
+    <br>
+    <div id="div4"></div>
+</section>
+
+<br><br>
+
+<section>
+    <div id="div5"></div>
+</section>
+
+<br><br>
+
+<section>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+</section>
+
+<br><br>
+
+<section>
+    <main>
+        <div></div>
+    </main>
+</section>
+</body>
+</html>
