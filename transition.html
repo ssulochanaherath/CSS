@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+        /*div {*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background-color: blue;*/
+
+        /*    transition-duration: 3s;*/
+        /*}*/
+
+        /*div:hover {*/
+        /*    background-color: red;*/
+        /*    !*transition-delay: 3s;*!*/
+        /*    width: 400px;*/
+        /*}*/
+
+        /*div:active {*/
+        /*    transform: rotate(360deg);*/
+        /*}*/
+
+        section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section>div {
+            width: 300px;
+            height: 300px;
+            background: lightblue;
+            border-radius: 5px;
+            /*border: 2px solid black;*/
+            text-align: center;
+        }
+
+        section>div>h2 {
+            text-align: center;
+        }
+
+        section>div>p {
+            text-align: center;
+        }
+
+        section>div>span {
+            color: red;
+        }
+
+        #section2 {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        #section2>div {
+            width: 150px;
+            height: 150px;
+            margin: 15px auto;
+
+            background: url("assests/images/images.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #section1>div:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+
+        @media all and (max-width: 1000px) {
+            #section2 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media all and (max-width: 600px) {
+                #section2 {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @media all and (max-width: 800px) {
+                    section {
+                        display: block;
+                        align-content: center;
+                    }
+
+                    section>div {
+                        position: relative;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        margin: auto;
+                    }
+                }
+    </style>
+</head>
+<body>
+<section id="section1">
+    <div>
+        <h2>Vission</h2>
+        <span>
+      <i class="fa-solid fa-eye"></i>
+    </span>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eveniet impedit mollitia nostrum odit tempore veniam voluptas? Architecto aspernatur, autem culpa iure natus non provident quae sed sint sunt vero!
+        </p>
+    </div>
+
+    <div>
+        <h2>Mission</h2>
+        <span>
+      <i class="fa-solid fa-rocket"></i>
+    </span>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at illo inventore, molestiae nam nesciunt veritatis voluptatum. Dolores incidunt quae qui quibusdam velit. Architecto, atque ducimus fugiat rerum sint ullam!
+        </p>
+    </div>
+
+    <div>
+        <h2>Values</h2>
+        <span>
+      <i class="fa-solid fa-gem"></i>
+    </span>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias architecto assumenda autem culpa cupiditate dolorem earum et fuga fugit, illum nulla recusandae reiciendis reprehenderit repudiandae soluta tempora veniam voluptatibus!
+        </p>
+    </div>
+</section>
+
+<main>
+    <section id="section2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+
+</main>
+
+<script src = "assests/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+<div></div>
+</body>
+</html>
