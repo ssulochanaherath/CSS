@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition And Animation Exercise 02</title>
+
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: rebeccapurple;
+
+            position: relative;
+        }
+
+        section>div{
+            width: 180px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: grey;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div>h3{
+            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            height: fit-content;
+            width: fit-content;
+        }
+
+        div::before{
+            content: "";
+            border: 10px solid white;
+            border-radius: 100%;
+            border-top-color: #ff253a;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div>
+        <h3>RWAD</h3>
+    </div>
+</section>
+
+</body>
+</html>
