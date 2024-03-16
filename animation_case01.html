@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Test</title>
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+
+        section{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        div{
+            height: 100px;
+            width: 250px;
+            background-color: dodgerblue;
+            border-radius: 20px;
+
+            animation: animediv 10s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animediv {
+            0%{
+                background-color: black;
+                margin-left: 0;
+                margin-top: 0;
+
+            }
+
+            25%{
+                background-color: grey;
+                margin-left: calc(100% - 250px);
+                margin-top: 0;
+                transform: rotate(360deg);
+            }
+
+            50%{
+                background-color: blue;
+                margin-left: calc(100vw - 250px);
+                margin-top: calc(100vh - 100px);
+                transform: rotate(0deg);
+            }
+
+            75%{
+                background-color: magenta;
+                margin-left: 0;
+                margin-top: calc(100vh - 100px);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>
